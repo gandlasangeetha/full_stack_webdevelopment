@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .dropdown-content{
+                display:none;
+                position:fixed;
+            }
+            .dropdown-content a{
+                display: block;
+            }
+            ul{
+                background-color: black;
+                text-align: center;
+                padding: 4px;
+                margin: 4px;
+                list-style: none;
+            }
+            ul>li{
+                display: inline-block;
+                width: 100px;
+                padding: 4px;
+                border-bottom: 2px solid blue;
+                background-color: #aaa;
+            }
+            ul>li a{
+                color: red;
+                font-size: 10px;
+            }
+            ul>li>a:hover{
+                color: aquamarine;
+            }
+            .dropdown-content{
+                display: none;
+                position: static;
+                box-shadow:0px 4px 8px 0px rgba(0,0,0,3);
+                background-color: #232323;
+            }
+            .dropdown-content a{
+                display: block;
+            }
+            .dropdown-content:hover .dropdown-content{
+                display:block;
+            }
+        </style>
+        <title>creation of webpage</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li class="dropdown"><a>Course</a>
+                <div class="dropdown-content">
+                    <a href="#">MEAN</a>
+                    <a href="#">MERN</a>
+                    <a href="#">C</a>
+                    <a href="#">C++</a>
+                </div>
+            </li>
+            <li><a>Contactus</a></li>
+            <li><a>Logout</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
